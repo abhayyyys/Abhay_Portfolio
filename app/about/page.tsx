@@ -2,7 +2,6 @@
 
 import WhatIAmGoodAt from "../components/WhatIAmGoodAt";
 import StatsCounter from "../components/StatsCounter";
-import Footer from "../components/Footer";
 import { useRef, useEffect, useState } from "react";
 
 export default function About() {
@@ -64,12 +63,11 @@ export default function About() {
         <StatsCounter />
       </div>
 
-      {/* Second section — glass card. Content-sized height (no
-          min-h-screen) with small top/bottom padding so it sits close
-          beneath the stats card instead of floating in a full empty
-          viewport. */}
+      {/* Second section — glass card. Padding trimmed to pt-0/pb-2 (from
+          pt-6/pb-6) so it sits right up against the stats card above it
+          instead of leaving a visible gap between the two glass panels. */}
       <div
-        className="relative flex flex-col justify-center items-center pt-6 pb-6 px-4"
+        className="relative flex flex-col justify-center items-center pt-0 pb-6 px-4"
         style={{ zIndex: 2 }}
       >
         <div

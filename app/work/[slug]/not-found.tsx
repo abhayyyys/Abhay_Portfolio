@@ -21,7 +21,7 @@ export default function NotFound() {
       </h2>
 
       <p className="text-lg text-gray-600 mb-8 text-center max-w-md">
-        The project you're looking for doesn't exist or has been moved.
+        The project you’re looking for doesn’t exist or has been moved.
       </p>
 
       <Link

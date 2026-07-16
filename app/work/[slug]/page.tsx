@@ -148,7 +148,7 @@ function MainVideoBlock({ video, onPlay, onClose, isActive }: { video: ProjectVi
   );
 }
 
-function SecondaryVideoBlock({ video, onPlay, onClose: _onClose, isActive }: { video: ProjectVideo; onPlay: () => void; onClose: () => void; isActive: boolean }) {
+function SecondaryVideoBlock({ video, onPlay, isActive }: { video: ProjectVideo; onPlay: () => void; onClose: () => void; isActive: boolean }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
 
