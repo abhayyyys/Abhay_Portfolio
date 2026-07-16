@@ -1,7 +1,7 @@
 "use client";
 
 import WhatIAmGoodAt from "../components/WhatIAmGoodAt";
-import StatsCounter from "../components/Statscounter";
+import StatsCounter from "../components/StatsCounter";
 import Footer from "../components/Footer";
 import { useRef, useEffect, useState } from "react";
 
