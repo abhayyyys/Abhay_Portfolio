@@ -6,10 +6,10 @@ const VideoCards = () => {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   const cards = [
-    { src: "/videos/Home/home_sq1.mp4", baseRotate: 2, baseY: 0, baseZ: 10 },
-    { src: "/videos/Home/home_sq2.mp4", baseRotate: -3, baseY: -8, baseZ: 20 },
-    { src: "/videos/Home/home_sq3.mp4", baseRotate: 1, baseY: 0, baseZ: 30 },
-    { src: "/videos/Home/home_sq4.mp4", baseRotate: -2, baseY: -8, baseZ: 40 },
+    { src: "/Videos/Home/home_sq1.mp4", baseRotate: 2, baseY: 0, baseZ: 10 },
+    { src: "/Videos/Home/home_sq2.mp4", baseRotate: -3, baseY: -8, baseZ: 20 },
+    { src: "/Videos/Home/home_sq3.mp4", baseRotate: 1, baseY: 0, baseZ: 30 },
+    { src: "/Videos/Home/home_sq4.mp4", baseRotate: -2, baseY: -8, baseZ: 40 },
   ];
 
   const handleVideoRef = (el: HTMLVideoElement | null, index: number) => {
