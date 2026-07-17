@@ -61,8 +61,7 @@ export const projects: Project[] = [
   {
     slug: "iim-bangalore",
     image: "/thumbnails/IIMB Preview.jpg",
-    // Horizontal video — preview exists at: "Previews/IIMB/work iimb.mp4"
-    hoverVideo: "/videos/Previews/IIMB/work iimb.mp4",
+    hoverVideo: "/videos/Previews/IIMB/work%20iimb.mp4",
     mainHeading: "MEASURING CHANGE",
     category: "Product Video",
     description: "A product film simplifying complex sustainability data through clean visual storytelling. Highlighting rising carbon emissions and TEMT's role in helping businesses track and manage their footprint.",
@@ -75,21 +74,18 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/watch?v=c4XZXMX2tZY&list=PLxOqVdcuLwsutXUX0YHq7oy23o84RIgft",
     projectVideos: [
       {
-        // Horizontal — preview exists at: "Previews/IIMB/90-final Preview.mp4"
-        src: "/videos/Previews/IIMB/90-final Preview.mp4",
+        src: "/videos/Previews/IIMB/90-final%20Preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/IIMB/90-final.mp4",
+        playVideoSrc: "/videos/Work%20Vids/IIMB/90-final.mp4",
         externalLink: "https://www.youtube.com/watch?v=c4XZXMX2tZY&list=PLxOqVdcuLwsutXUX0YHq7oy23o84RIgft",
         externalLabel: "VIEW ON YOUTUBE"
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/IIMB/intro-1.mp4",
+        src: "/videos/Work%20Vids/IIMB/intro-1.mp4",
         type: "secondary"
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/IIMB/45-final.mp4",
+        src: "/videos/Work%20Vids/IIMB/45-final.mp4",
         type: "reel"
       },
     ],
@@ -98,8 +94,7 @@ export const projects: Project[] = [
   {
     slug: "iiad-pitches",
     image: "/thumbnails/Pitches Preview.jpg",
-    // Horizontal video — preview exists: "work pitches.mp4"
-    hoverVideo: "/videos/Previews/Pitches/work pitches.mp4",
+    hoverVideo: "/videos/Previews/Pitches/work%20pitches.mp4",
     mainHeading: "IDEAS IN MOTION",
     category: "Pitch Decks",
     description: "Designed pitch decks that translated founder visions into impactful visual narratives. AAVYA Concepts embraced a Bollywood-inspired cinematic style, while The Lemon Agency leaned into a modern postmodern aesthetic.",
@@ -112,29 +107,25 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
     projectVideos: [
       {
-        // Horizontal — preview exists: "aavya preview.mp4"
-        src: "/videos/Previews/Pitches/aavya preview.mp4",
+        src: "/videos/Previews/Pitches/aavya%20preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Pitches/Aavya Pitch Deck.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Pitches/Aavya%20Pitch%20Deck.mp4",
         externalLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
         externalLabel: "VIEW ON YOUTUBE"
       },
       {
-        // Horizontal — preview exists: "tla preview.mp4"
-        src: "/videos/Previews/Pitches/tla preview.mp4",
+        src: "/videos/Previews/Pitches/tla%20preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Pitches/TLA Pitch.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Pitches/TLA%20Pitch.mp4",
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/Pitches/Aavya Reel.mp4",
+        src: "/videos/Work%20Vids/Pitches/Aavya%20Reel.mp4",
         type: "reel",
         externalLink: "https://www.instagram.com/p/DE7cfFiv7eB/",
         externalLabel: "INSTAGRAM"
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/Pitches/Lemon Reel.mp4",
+        src: "/videos/Work%20Vids/Pitches/Lemon%20Reel.mp4",
         type: "reel",
         externalLink: "https://www.instagram.com/p/DFNLU0MzI_z/",
         externalLabel: "INSTAGRAM"
@@ -145,8 +136,7 @@ export const projects: Project[] = [
   {
     slug: "grapevine",
     image: "/thumbnails/work grapevine.jpg",
-    // Horizontal — preview exists: "work grapevine.mp4"
-    hoverVideo: "/videos/Previews/Grapevine/work grapevine.mp4",
+    hoverVideo: "/videos/Previews/grapevine/work%20grapevine.mp4",
     mainHeading: "GRAPEVINE",
     category: "UGC & Social Media",
     description: "Created 15 UGC reels showcasing Grapevine's products alongside teasers and trailers for new product launches, building authentic engagement and brand presence.",
@@ -159,47 +149,43 @@ export const projects: Project[] = [
     playlistLink: "",
     projectVideos: [
       {
-        // Horizontal — preview exists: "grapevine teaser preview.mp4"
-        src: "/videos/Previews/Grapevine/grapevine teaser preview.mp4",
+        src: "/videos/Previews/grapevine/grapevine%20teaser%20preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Grapevine/grapevine teaser.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Grapevine/grapevine%20teaser.mp4",
       },
       {
-        src: "/videos/Work Vids/Grapevine/30.mp4",
+        src: "/videos/Work%20Vids/Grapevine/30.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Grapevine/30.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Grapevine/30.mp4",
       },
       {
-        src: "/videos/Work Vids/Grapevine/Reddy.mp4",
+        src: "/videos/Work%20Vids/Grapevine/Reddy.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Grapevine/Reddy.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Grapevine/Reddy.mp4",
       },
       {
-        // Vertical — use video directly
-        src: "/videos/Work Vids/Grapevine/28 final.mp4",
+        src: "/videos/Work%20Vids/Grapevine/28%20final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/Grapevine/time freeze final.mp4",
+        src: "/videos/Work%20Vids/Grapevine/time%20freeze%20final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/Grapevine/29.mp4",
+        src: "/videos/Work%20Vids/Grapevine/29.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/Grapevine/stuck n2.mp4",
+        src: "/videos/Work%20Vids/Grapevine/stuck%20n2.mp4",
         type: "reel",
       },
-      
     ],
     videos: [],
   },
   {
     slug: "tedx-snu",
     image: "/thumbnails/ted preview.jpg",
-    // Horizontal — preview exists: "ted preview.mp4"
-    hoverVideo: "/videos/Previews/Ted/ted preview.mp4",
+    hoverVideo: "/videos/Previews/Ted/ted%20preview.mp4",
     mainHeading: "THROUGH THE LOOKING GLASS",
     category: "Club Work",
     description: "Led videography for TEDx Shiv Nadar University 2024 to 2025, curating the Instagram feed and capturing the entire conference through cinematic reels, interviews, and announcement videos reaching over 493K views.",
@@ -212,30 +198,25 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsscJm-0rAKqGEOW7b2Nyk1N",
     projectVideos: [
       {
-        // Horizontal — preview exists: "Ted time capsule Preview.mp4"
-        src: "/videos/Previews/Ted/Ted time capsule Preview.mp4",
+        src: "/videos/Previews/Ted/Ted%20time%20capsule%20Preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Ted/TED time capsule.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Ted/TED%20time%20capsule.mp4",
       },
       {
-        // Horizontal — preview exists: "Through The Looking Glass Previ..." (truncated in screenshot)
-        src: "/videos/Previews/Ted/Through The Looking Glass Preview.mp4",
+        src: "/videos/Previews/Ted/Through%20The%20Looking%20Glass%20Preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/Ted/Through The Looking Glass.mp4",
+        playVideoSrc: "/videos/Work%20Vids/Ted/Through%20The%20Looking%20Glass.mp4",
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/Ted/cinematic.mp4",
+        src: "/videos/Work%20Vids/Ted/cinematic.mp4",
         type: "reel",
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/Ted/Rec Reel.mp4",
+        src: "/videos/Work%20Vids/Ted/Rec%20Reel.mp4",
         type: "reel",
       },
       {
-        // Vertical — no preview needed, use video directly
-        src: "/videos/Work Vids/Ted/Speaker Reveal.mp4",
+        src: "/videos/Work%20Vids/Ted/Speaker%20Reveal.mp4",
         type: "reel",
       },
     ],
@@ -244,7 +225,7 @@ export const projects: Project[] = [
   {
     slug: "ecell-snu",
     image: "/thumbnails/ecell preview.jpg",
-    hoverVideo: "/videos/Previews/ecell/work ecell.mp4",
+    hoverVideo: "/videos/Previews/ecell/work%20ecell.mp4",
     mainHeading: "XCELERATE",
     category: "Club Work",
     description: "As Head of Videography for ECell 2024 to 2025, built the visual story of its flagship Ideathon Xcelerate through trailers, teasers, live event coverage, reveal videos and sponsor reels, garnering 105K views.",
@@ -257,51 +238,50 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwssf0eVVyTsiVG7ul_pHjEtw",
     projectVideos: [
       {
-        src: "/videos/Previews/ecell/ecell trailer preview.mp4",
+        src: "/videos/Previews/ecell/ecell%20trailer%20preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/ecell/Accelerate teaser 25.mp4",
+        playVideoSrc: "/videos/Work%20Vids/ecell/Accelerate%20teaser%2025.mp4",
       },
       {
-        src: "/videos/Previews/ecell/ecell aftermovie preview.mp4",
+        src: "/videos/Previews/ecell/ecell%20aftermovie%20preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/Work Vids/ecell/aftermovie.mp4",
+        playVideoSrc: "/videos/Work%20Vids/ecell/aftermovie.mp4",
       },
       {
-        src: "/videos/Work Vids/ecell/Accelerate Teaser.mp4",
+        src: "/videos/Work%20Vids/ecell/Accelerate%20Teaser.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/Accelerate 24.mp4",
+        src: "/videos/Work%20Vids/ecell/Accelerate%2024.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/Core Reveal.mp4",
+        src: "/videos/Work%20Vids/ecell/Core%20Reveal.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/Leads Reveal.mp4",
+        src: "/videos/Work%20Vids/ecell/Leads%20Reveal.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/Stories.mp4",
+        src: "/videos/Work%20Vids/ecell/Stories.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/Uno Night.mp4",
+        src: "/videos/Work%20Vids/ecell/Uno%20Night.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ecell/xtcy1.mp4",
+        src: "/videos/Work%20Vids/ecell/xtcy1.mp4",
         type: "reel",
       },
     ],
     videos: [],
-},
+  },
   {
     slug: "ace-experiences",
     image: "/thumbnails/work ace.jpg",
-    // Horizontal — preview exists: "work ace.mp4"
-    hoverVideo: "/videos/Previews/ace/work ace.mp4",
+    hoverVideo: "/videos/Previews/ace/work%20ace.mp4",
     mainHeading: "ACE EXPERIENCES",
     category: "Social Media",
     description: "Crafted reels for Ace Experiences' Diwali celebration with Chaar Diwari and the Star Struck launch with Sunny Leone. Each reel averaging around 30K views.",
@@ -314,28 +294,27 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
     projectVideos: [
       {
-        // Vertical — use video directly
-        src: "/videos/Work Vids/ace/Ace final-2.mp4",
+        src: "/videos/Work%20Vids/ace/Ace%20final-2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ace/ace3-dfina.mp4",
+        src: "/videos/Work%20Vids/ace/ace3-dfina.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ace/final.mp4",
+        src: "/videos/Work%20Vids/ace/final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ace/r4-d3.mp4",
+        src: "/videos/Work%20Vids/ace/r4-d3.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ace/Reel-2-D2.mp4",
+        src: "/videos/Work%20Vids/ace/Reel-2-D2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/ace/risq.mp4",
+        src: "/videos/Work%20Vids/ace/risq.mp4",
         type: "reel",
       },
     ],
@@ -344,8 +323,7 @@ export const projects: Project[] = [
   {
     slug: "dance-with-aara",
     image: "/thumbnails/work dwa.jpg",
-    // Horizontal — preview exists: "work dwa.mp4"
-    hoverVideo: "/videos/Previews/DwA/work dwa.mp4",
+    hoverVideo: "/videos/Previews/DwA/work%20dwa.mp4",
     mainHeading: "DANCE WITH AARA",
     category: "Social Media",
     description: "Trend-driven reels showcasing high-impact storytelling and amplifying Dance With AARA's community spirit, with one intro reel reaching 580K views.",
@@ -358,19 +336,19 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsteg6YZGkO35mURwk19tsdE",
     projectVideos: [
       {
-        src: "/videos/Work Vids/DwA/A&M-2.mp4",
+        src: "/videos/Work%20Vids/DwA/A&M-2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/DwA/aqua2.mp4",
+        src: "/videos/Work%20Vids/DwA/aqua2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/DwA/d1-302.mp4",
+        src: "/videos/Work%20Vids/DwA/d1-302.mp4",
         type: "reel",
       },
       {
-        src: "/videos/Work Vids/DwA/d2.mp4",
+        src: "/videos/Work%20Vids/DwA/d2.mp4",
         type: "reel",
       },
     ],
@@ -379,7 +357,6 @@ export const projects: Project[] = [
   {
     slug: "filmography",
     image: "/thumbnails/home_work_3.jpg",
-    // No preview found — use video itself as preview (fallback)
     hoverVideo: "/videos/Home/home_work_3.mp4",
     mainHeading: "FILMOGRAPHY",
     category: "Short Films",
@@ -393,11 +370,11 @@ export const projects: Project[] = [
     playlistLink: "",
     projectVideos: [
       {
-        src: "/videos/about bg.mp4",
+        src: "/videos/about%20bg.mp4",
         type: "main",
         playVideoSrc: "/videos/Home/home_work_3.mp4",
-    }
-  ],
+      }
+    ],
     videos: [],
   },
 ];
