@@ -74,7 +74,7 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/watch?v=c4XZXMX2tZY&list=PLxOqVdcuLwsutXUX0YHq7oy23o84RIgft",
     projectVideos: [
       {
-        src: "/videos/previews/iimb/90-final_Preview.mp4",
+        src: "/videos/previews/iimb/90_final_preview.mp4",
         type: "main",
         playVideoSrc: "/videos/work_vids/iimb/90_final.mp4",
         externalLink: "https://www.youtube.com/watch?v=c4XZXMX2tZY&list=PLxOqVdcuLwsutXUX0YHq7oy23o84RIgft",
