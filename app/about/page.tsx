@@ -48,7 +48,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="/videos/about bg.mp4" type="video/mp4" />
+          <source src="/videos/about_bg.mp4" type="video/mp4" />
         </video>
       </div>
 
