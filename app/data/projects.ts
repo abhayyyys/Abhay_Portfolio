@@ -76,16 +76,16 @@ export const projects: Project[] = [
       {
         src: "/videos/previews/iimb/90_final_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/iimb/90_final.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359199/portfolio/work_vids/iimb/90_final.mp4",
         externalLink: "https://www.youtube.com/watch?v=c4XZXMX2tZY&list=PLxOqVdcuLwsutXUX0YHq7oy23o84RIgft",
         externalLabel: "VIEW ON YOUTUBE"
       },
       {
-        src: "/videos/work_vids/iimb/intro_1.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359202/portfolio/work_vids/iimb/intro_1.mp4",
         type: "secondary"
       },
       {
-        src: "/videos/work_vids/iimb/45_final.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359182/portfolio/work_vids/iimb/45_final.mp4",
         type: "reel"
       },
     ],
@@ -109,23 +109,23 @@ export const projects: Project[] = [
       {
         src: "/videos/previews/pitches/aavya_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/pitches/aavya_pitch_deck.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359250/portfolio/work_vids/pitches/aavya_pitch_deck.mp4",
         externalLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
         externalLabel: "VIEW ON YOUTUBE"
       },
       {
         src: "/videos/previews/pitches/tla_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/pitches/tla_pitch.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359338/portfolio/work_vids/pitches/tla_pitch.mp4",
       },
       {
-        src: "/videos/work_vids/pitches/aavya_reel.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359281/portfolio/work_vids/pitches/aavya_reel.mp4",
         type: "reel",
         externalLink: "https://www.instagram.com/p/DE7cfFiv7eB/",
         externalLabel: "INSTAGRAM"
       },
       {
-        src: "/videos/work_vids/pitches/lemon_reel.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359302/portfolio/work_vids/pitches/lemon_reel.mp4",
         type: "reel",
         externalLink: "https://www.instagram.com/p/DFNLU0MzI_z/",
         externalLabel: "INSTAGRAM"
@@ -151,32 +151,32 @@ export const projects: Project[] = [
       {
         src: "/videos/previews/grapevine/grapevine_teaser_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/grapevine/grapevine_teaser.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359152/portfolio/work_vids/grapevine/grapevine_teaser.mp4",
       },
       {
         src: "/videos/work_vids/grapevine/30.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/grapevine/30.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359141/portfolio/work_vids/grapevine/30.mp4",
       },
       {
         src: "/videos/work_vids/grapevine/reddy.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/grapevine/reddy.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359163/portfolio/work_vids/grapevine/reddy.mp4",
       },
       {
-        src: "/videos/work_vids/grapevine/28_final.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359127/portfolio/work_vids/grapevine/28_final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/grapevine/time_freeze_final.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359174/portfolio/work_vids/grapevine/time_freeze_final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/grapevine/29.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359130/portfolio/work_vids/grapevine/29.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/grapevine/stuck_n2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359168/portfolio/work_vids/grapevine/stuck_n2.mp4",
         type: "reel",
       },
     ],
@@ -200,23 +200,23 @@ export const projects: Project[] = [
       {
         src: "/videos/previews/ted/ted_time_capsule_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/ted/TED_time_capsule.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359387/portfolio/work_vids/ted/ted_time_capsule.mp4",
       },
       {
         src: "/videos/previews/ted/through_the_looking_glass_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/ted/Through_The_Looking_Glass.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359400/portfolio/work_vids/ted/through_the_looking_glass.mp4",
       },
       {
-        src: "/videos/work_vids/ted/cinematic.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359349/portfolio/work_vids/ted/cinematic.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ted/rec_reel.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359352/portfolio/work_vids/ted/rec_reel.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ted/speaker_reveal.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359358/portfolio/work_vids/ted/speaker_reveal.mp4",
         type: "reel",
       },
     ],
@@ -240,39 +240,39 @@ export const projects: Project[] = [
       {
         src: "/videos/previews/ecell/ecell_trailer_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/ecell/accelerate_teaser_25.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359011/portfolio/work_vids/ecell/accelerate_teaser_25.mp4",
       },
       {
         src: "/videos/previews/ecell/ecell_aftermovie_preview.mp4",
         type: "main",
-        playVideoSrc: "/videos/work_vids/ecell/aftermovie.mp4",
+        playVideoSrc: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359042/portfolio/work_vids/ecell/aftermovie.mp4",
       },
       {
-        src: "/videos/work_vids/ecell/accelerate_seaser.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358987/portfolio/work_vids/ecell/accelerate_teaser.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/accelerate_24.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358977/portfolio/work_vids/ecell/accelerate_24.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/core_reveal.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359063/portfolio/work_vids/ecell/core_reveal.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/leads_reveal.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359079/portfolio/work_vids/ecell/leads_reveal.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/stories.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359094/portfolio/work_vids/ecell/stories.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/uno_night.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359105/portfolio/work_vids/ecell/uno_night.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ecell/xtcy1.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785359123/portfolio/work_vids/ecell/xtcy1.mp4",
         type: "reel",
       },
     ],
@@ -294,27 +294,27 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
     projectVideos: [
       {
-        src: "/videos/work_vids/ace/ace_final-2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358810/portfolio/work_vids/ace/ace_final_2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ace/ace_final_3.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358819/portfolio/work_vids/ace/ace_final_3.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ace/final.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358827/portfolio/work_vids/ace/final.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ace/r4_d3.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358835/portfolio/work_vids/ace/r4_d3.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ace/reel_2_d2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358844/portfolio/work_vids/ace/reel_2_d2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/ace/risq.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358854/portfolio/work_vids/ace/risq.mp4",
         type: "reel",
       },
     ],
@@ -336,19 +336,19 @@ export const projects: Project[] = [
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsteg6YZGkO35mURwk19tsdE",
     projectVideos: [
       {
-        src: "/videos/work_vids/dwa/AM_2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358903/portfolio/work_vids/dwa/AM_2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/dwa/aqua2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358920/portfolio/work_vids/dwa/aqua2.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/dwa/d1_302.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358938/portfolio/work_vids/dwa/d1_302.mp4",
         type: "reel",
       },
       {
-        src: "/videos/work_vids/dwa/d2.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1785358949/portfolio/work_vids/dwa/d2.mp4",
         type: "reel",
       },
     ],
@@ -370,7 +370,7 @@ export const projects: Project[] = [
     playlistLink: "",
     projectVideos: [
       {
-        src: "/videos/about_bg.mp4",
+        src: "https://res.cloudinary.com/sulzpazt/video/upload/v1784379879/about_bg_vyzibd.mp4",
         type: "main",
         playVideoSrc: "/videos/home/home_work_3.mp4",
       }
