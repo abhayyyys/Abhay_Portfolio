@@ -48,7 +48,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="/videos/about_bg.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/sulzpazt/video/upload/v1784379879/about_bg_vyzibd.mp4" type="video/mp4" />
         </video>
       </div>
 
