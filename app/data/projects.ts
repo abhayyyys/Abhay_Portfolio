@@ -30,7 +30,7 @@ export interface Project {
   videos: Video[];
 }
 
-const R2 = "https://pub-728f9d7c2cb14f9eb6eb895f82ed6a8f.r2.dev";
+const R2 = "https://videos.abhaysingh.space";
 
 export const homeCards = [
   {

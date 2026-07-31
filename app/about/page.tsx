@@ -25,7 +25,11 @@ export default function About() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const R2 = "https://pub-728f9d7c2cb14f9eb6eb895f82ed6a8f.r2.dev";
+
+
+  const R2 = "https://videos.abhaysingh.space";
+
+
   return (
     <div style={{ backgroundColor: "#EDF1F0" }}>
 
