@@ -25,7 +25,7 @@ export default function About() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const R2 = "https://pub-728f9d7c2cb14f9eb6eb895f82ed6a8f.r2.dev";
   return (
     <div style={{ backgroundColor: "#EDF1F0" }}>
 
@@ -48,7 +48,7 @@ export default function About() {
           playsInline
           preload="auto"
         >
-          <source src="https://res.cloudinary.com/sulzpazt/video/upload/v1784379879/about_bg_vyzibd.mp4" type="video/mp4" />
+          <source src={`${R2}/videos/about_bg.mp4`} type="video/mp4" />
         </video>
       </div>
 

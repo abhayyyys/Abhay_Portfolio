@@ -4,12 +4,12 @@ import { useState, useRef } from "react";
 const VideoCards = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
-
+  const R2 = "https://pub-728f9d7c2cb14f9eb6eb895f82ed6a8f.r2.dev";
   const cards = [
-    { src: "/videos/home/home_sq1.mp4", baseRotate: 2, baseY: 0, baseZ: 10 },
-    { src: "/videos/home/home_sq2.mp4", baseRotate: -3, baseY: -8, baseZ: 20 },
-    { src: "/videos/home/home_sq3.mp4", baseRotate: 1, baseY: 0, baseZ: 30 },
-    { src: "/videos/home/home_sq4.mp4", baseRotate: -2, baseY: -8, baseZ: 40 },
+    { src: `${R2}/videos/home/home_sq1.mp4`, baseRotate: 2, baseY: 0, baseZ: 10 },
+    { src: `${R2}/videos/home/home_sq2.mp4`, baseRotate: -3, baseY: -8, baseZ: 20 },
+    { src: `${R2}/videos/home/home_sq3.mp4`, baseRotate: 1, baseY: 0, baseZ: 30 },
+    { src: `${R2}/videos/home/home_sq4.mp4`, baseRotate: -2, baseY: -8, baseZ: 40 },
   ];
 
   const handleVideoRef = (el: HTMLVideoElement | null, index: number) => {
