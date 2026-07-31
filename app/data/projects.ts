@@ -105,33 +105,33 @@ export const projects: Project[] = [
     client: "AAVYA Inc., The Lemon Agency",
     tools: "DaVinci Resolve",
     role: "Designer & Editor",
-    youtubeLink: "https://youtu.be/4k5bq6Vxx_o?si=c_xu-zm1Q8qUEzbU",
-    playlistLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
+    youtubeLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
+    playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
     projectVideos: [
       {
         src: `${R2}/videos/previews/pitches/aavya_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/pitches/aavya_pitch_deck.mp4`,
-        externalLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3",
-        externalLabel: "VIEW ON YOUTUBE"
+        externalLink: "https://www.youtube.com/watch?v=9YFOsqwwdNk&list=PLxOqVdcuLwssRZB1tD-6IBCozo_-GZuJ3&index=1",
+        externalLabel: "VIEW MORE"
       },
       {
         src: `${R2}/videos/previews/pitches/tla_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/pitches/tla_pitch.mp4`,
       },
-      {
-        src: `${R2}/videos/work_vids/pitches/aavya_reel.mp4`,
-        type: "reel",
-        externalLink: "https://www.instagram.com/p/DE7cfFiv7eB/",
-        externalLabel: "INSTAGRAM"
-      },
-      {
-        src: `${R2}/videos/work_vids/pitches/lemon_reel.mp4`,
-        type: "reel",
-        externalLink: "https://www.instagram.com/p/DFNLU0MzI_z/",
-        externalLabel: "INSTAGRAM"
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/pitches/aavya_reel.mp4`,
+      //   type: "reel",
+      //   externalLink: "https://www.instagram.com/p/DE7cfFiv7eB/",
+      //   externalLabel: "INSTAGRAM"
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/pitches/lemon_reel.mp4`,
+      //   type: "reel",
+      //   externalLink: "https://www.instagram.com/p/DFNLU0MzI_z/",
+      //   externalLabel: "INSTAGRAM"
+      // },
     ],
     videos: [],
   },
@@ -147,19 +147,21 @@ export const projects: Project[] = [
     client: "Grapevine",
     tools: "DaVinci Resolve, Instagram Reels",
     role: "UGC Creator & Video Producer",
-    youtubeLink: "",
-    playlistLink: "",
+    youtubeLink: "https://www.youtube.com/watch?v=JbMhBOiAqSQ&list=PLGc1Ru2Xs0cU&index=1",
+    playlistLink: "https://www.youtube.com/watch?v=JbMhBOiAqSQ&list=PLGc1Ru2Xs0cU&index=1",
     projectVideos: [
       {
         src: `${R2}/videos/previews/grapevine/grapevine_teaser_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/grapevine/grapevine_teaser.mp4`,
+        externalLink: "https://www.youtube.com/watch?v=JbMhBOiAqSQ&list=PLGc1Ru2Xs0cU&index=1",
+        externalLabel: "VIEW MORE"
       },
-      {
-        src: `${R2}/videos/work_vids/grapevine/30.mp4`,
-        type: "main",
-        playVideoSrc: `${R2}/videos/work_vids/grapevine/30.mp4`,
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/grapevine/30.mp4`,
+      //   type: "main",
+      //   playVideoSrc: `${R2}/videos/work_vids/grapevine/30.mp4`,
+      // },
       {
         src: `${R2}/videos/work_vids/grapevine/reddy.mp4`,
         type: "main",
@@ -203,24 +205,27 @@ export const projects: Project[] = [
         src: `${R2}/videos/previews/ted/ted_time_capsule_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/ted/ted_time_capsule.mp4`,
+        externalLink: "https://www.youtube.com/watch?v=Rd9OoyiYmSw&list=PLxOqVdcuLwsscJm-0rAKqGEOW7b2Nyk1N&index=1",
+        externalLabel: "VIEW MORE"
       },
       {
         src: `${R2}/videos/previews/ted/through_the_looking_glass_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/ted/through_the_looking_glass.mp4`,
+        
       },
-      {
-        src: `${R2}/videos/work_vids/ted/cinematic.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ted/rec_reel.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ted/speaker_reveal.mp4`,
-        type: "reel",
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/ted/cinematic.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ted/rec_reel.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ted/speaker_reveal.mp4`,
+      //   type: "reel",
+      // },
     ],
     videos: [],
   },
@@ -243,12 +248,14 @@ export const projects: Project[] = [
         src: `${R2}/videos/previews/ecell/ecell_trailer_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/ecell/accelerate_teaser_25.mp4`,
+        externalLink: "https://www.youtube.com/watch?v=ag2AWah3Xvk&list=PLxOqVdcuLwssf0eVVyTsiVG7ul_pHjEtw&index=1",
+        externalLabel: "VIEW MORE"
       },
       {
         src: `${R2}/videos/previews/ecell/ecell_aftermovie_preview.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/work_vids/ecell/aftermovie.mp4`,
-      },
+    },
       {
         src: `${R2}/videos/work_vids/ecell/accelerate_teaser.mp4`,
         type: "reel",
@@ -257,26 +264,26 @@ export const projects: Project[] = [
         src: `${R2}/videos/work_vids/ecell/accelerate_24.mp4`,
         type: "reel",
       },
-      {
-        src: `${R2}/videos/work_vids/ecell/core_reveal.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ecell/leads_reveal.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ecell/stories.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ecell/uno_night.mp4`,
-        type: "reel",
-      },
-      {
-        src: `${R2}/videos/work_vids/ecell/xtcy1.mp4`,
-        type: "reel",
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/ecell/core_reveal.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ecell/leads_reveal.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ecell/stories.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ecell/uno_night.mp4`,
+      //   type: "reel",
+      // },
+      // {
+      //   src: `${R2}/videos/work_vids/ecell/xtcy1.mp4`,
+      //   type: "reel",
+      // },
     ],
     videos: [],
   },
@@ -295,13 +302,15 @@ export const projects: Project[] = [
     youtubeLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
     playlistLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
     projectVideos: [
-      {
-        src: `${R2}/videos/work_vids/ace/ace_final_2.mp4`,
-        type: "reel",
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/ace/ace_final_2.mp4`,
+      //   type: "reel",
+      // },
       {
         src: `${R2}/videos/work_vids/ace/ace_final_3.mp4`,
         type: "reel",
+        externalLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
+        externalLabel: "VIEW MORE"
       },
       {
         src: `${R2}/videos/work_vids/ace/final.mp4`,
@@ -340,6 +349,8 @@ export const projects: Project[] = [
       {
         src: `${R2}/videos/work_vids/dwa/AM_2.mp4`,
         type: "reel",
+        externalLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsteg6YZGkO35mURwk19tsdE",
+        externalLabel: "VIEW MORE",
       },
       {
         src: `${R2}/videos/work_vids/dwa/aqua2.mp4`,
@@ -368,13 +379,15 @@ export const projects: Project[] = [
     client: "Various",
     tools: "DaVinci Resolve, Various",
     role: "Multiple Roles",
-    youtubeLink: "",
-    playlistLink: "",
+    youtubeLink: "https://www.youtube.com/watch?v=A2qQwRFRqKQ&list=PLxOqVdcuLwsv34mGNgWOijuKApM3oGRHC&index=1",
+    playlistLink: "https://www.youtube.com/watch?v=A2qQwRFRqKQ&list=PLxOqVdcuLwsv34mGNgWOijuKApM3oGRHC&index=1",
     projectVideos: [
       {
         src: `${R2}/videos/about_bg.mp4`,
         type: "main",
         playVideoSrc: `${R2}/videos/home/home_work_3.mp4`,
+        externalLink: "https://www.youtube.com/watch?v=A2qQwRFRqKQ&list=PLxOqVdcuLwsv34mGNgWOijuKApM3oGRHC&index=1",
+        externalLabel: "VIEW MORE"
       }
     ],
     videos: [],
