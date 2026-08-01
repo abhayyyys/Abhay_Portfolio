@@ -17,14 +17,15 @@ const Navbar = () => {
   const isCurrentPage = (path: string) => pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 p-4 bg-transparent z-10">
-      <div className="flex gap-2">
+    <nav className="fixed top-0 left-0 p-2 sm:p-4 bg-transparent z-10">
+      <div className="flex gap-1 sm:gap-2">
         {navItems.map((item) => (
           <button
             key={item.name}
             onClick={() => navigate(item.path)}
             className={`
-              relative overflow-hidden px-4 py-1 rounded-full font-medium
+              relative overflow-hidden px-2.5 py-1 sm:px-4 sm:py-1 rounded-full font-medium
+              text-xs sm:text-base
               transition-all duration-300 ease-in-out
               transform group
               ${

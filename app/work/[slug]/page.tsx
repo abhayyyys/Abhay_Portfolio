@@ -301,7 +301,7 @@ function GenericVideoSection({
   return (
     <div className="flex flex-col gap-6">
       {mainVideos.length > 0 && (
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           {mainVideos.map((v, i) => {
             const id = `main-${i}`;
             if (v.type === "main") {
@@ -313,12 +313,7 @@ function GenericVideoSection({
       )}
 
       {reels.length > 0 && (
-        <div
-          className="grid gap-4 justify-center"
-          style={{
-            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 225px))",
-          }}
-        >
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
           {reels.map((reel, i) => {
             const id = `reel-${i}`;
             return (
@@ -328,9 +323,15 @@ function GenericVideoSection({
             );
           })}
           {playlistLink && (
-            <div style={{ aspectRatio: "9/16" }} className="flex items-center justify-center rounded-2xl border-2 border-white/20 hover:border-orange-500 transition-colors cursor-pointer">
-              <Link href={playlistLink} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-orange-500 text-xl font-bold text-center transition-colors px-4">& MORE</Link>
-            </div>
+            <Link
+              href={playlistLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ aspectRatio: "9/16" }}
+              className="flex items-center justify-center rounded-2xl border-2 border-white/20 hover:border-orange-500 transition-colors cursor-pointer"
+            >
+              <span className="text-white/50 hover:text-orange-500 text-xl font-bold text-center transition-colors px-4">& MORE</span>
+            </Link>
           )}
         </div>
       )}
@@ -350,9 +351,6 @@ function IIMBVideoSection({
   const mainVideo = projectVideos.find(v => v.type === "main");
   const secondaryVideo = projectVideos.find(v => v.type === "secondary");
   const reelVideo = projectVideos.find(v => v.type === "reel");
-
-  const ROW_HEIGHT = 380;
-  const REEL_WIDTH = Math.round(ROW_HEIGHT * 9 / 16);
 
   const reelRef = useRef<HTMLVideoElement>(null);
   const [reelPlaying, setReelPlaying] = useState(false);
@@ -396,24 +394,24 @@ function IIMBVideoSection({
       {mainVideo && (
         <MainVideoBlock video={mainVideo} isActive={activeId === null || activeId === "main"} onPlay={() => setActiveId("main")} onClose={() => setActiveId(null)} />
       )}
-      {(secondaryVideo || reelVideo) && (
-        <div className="flex gap-4" style={{ height: `${ROW_HEIGHT}px` }}>
-          {secondaryVideo && (
-            <SecondaryVideoBlock video={secondaryVideo} isActive={activeId === null || activeId === "sec"} onPlay={() => setActiveId("sec")} onClose={() => setActiveId(null)} />
-          )}
-          {reelVideo && (
-            <div className="relative overflow-hidden rounded-2xl cursor-pointer flex-shrink-0" style={{ width: `${REEL_WIDTH}px` }} onClick={handleReelClick}>
-              <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
-                <source src={reelVideo.src} type="video/mp4" />
-              </video>
-              {!reelPlaying ? (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 text-white text-sm font-bold">PLAY</div>
-                </div>
-              ) : (
-                <div className="absolute top-3 left-3"><div className="bg-orange-500 rounded-full px-2 py-1 text-white text-xs font-bold">CLOSE</div></div>
-              )}
+      {secondaryVideo && (
+        <SecondaryVideoBlock video={secondaryVideo} isActive={activeId === null || activeId === "sec"} onPlay={() => setActiveId("sec")} onClose={() => setActiveId(null)} />
+      )}
+      {reelVideo && (
+        <div
+          className="relative overflow-hidden rounded-2xl cursor-pointer mx-auto w-auto"
+          style={{ aspectRatio: "9/16", maxHeight: "75vh", maxWidth: "100%" }}
+          onClick={handleReelClick}
+        >
+          <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
+            <source src={reelVideo.src} type="video/mp4" />
+          </video>
+          {!reelPlaying ? (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors">
+              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 text-white text-sm font-bold">PLAY</div>
             </div>
+          ) : (
+            <div className="absolute top-3 left-3"><div className="bg-orange-500 rounded-full px-2 py-1 text-white text-xs font-bold">CLOSE</div></div>
           )}
         </div>
       )}

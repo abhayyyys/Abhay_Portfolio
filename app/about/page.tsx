@@ -93,13 +93,13 @@ export default function About() {
             [Abhay Singh]
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl leading-relaxed text-gray-700 text-center">
-            A passionate creative professional dedicated to bringing stories
-            to life through innovative visual storytelling. With expertise
-            spanning across concepting, production, editing, and design, I
-            craft compelling narratives that resonate with audiences and drive
-            meaningful connections. Every project is an opportunity to push
-            creative boundaries and deliver exceptional results that exceed
-            expectations.
+            Be it an idea, a product or a story, it becomes the clearest when it's playing in front of you, 
+            shot, edited and produced in the exact way you imagined it. And what makes your idea resonate
+            is the IDENTITY it carries, not how fancy it looks, nor the AI jargon making it sound professional,
+            but the identity you impart to it. Andddd that is exactly where I come in. I have worked with
+            directors, brands and agencies to create all sorts of content, and that has helped me form 
+            my approach no matter the scale or vibe of the project: Identity and Coherence.
+            (Scroll down to see more!)
           </p>
         </div>
       </div>
