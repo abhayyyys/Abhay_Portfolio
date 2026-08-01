@@ -175,10 +175,10 @@ export const projects: Project[] = [
         src: `${R2}/videos/work_vids/grapevine/time_freeze_final.mp4`,
         type: "reel",
       },
-      {
-        src: `${R2}/videos/work_vids/grapevine/29.mp4`,
-        type: "reel",
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/grapevine/29.mp4`,
+      //   type: "reel",
+      // },
       {
         src: `${R2}/videos/work_vids/grapevine/stuck_n2.mp4`,
         type: "reel",
@@ -264,10 +264,10 @@ export const projects: Project[] = [
         src: `${R2}/videos/work_vids/ecell/accelerate_24.mp4`,
         type: "reel",
       },
-      // {
-      //   src: `${R2}/videos/work_vids/ecell/core_reveal.mp4`,
-      //   type: "reel",
-      // },
+      {
+        src: `${R2}/videos/work_vids/ecell/core_reveal.mp4`,
+        type: "reel",
+      },
       // {
       //   src: `${R2}/videos/work_vids/ecell/leads_reveal.mp4`,
       //   type: "reel",

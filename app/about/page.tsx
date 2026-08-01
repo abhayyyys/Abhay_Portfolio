@@ -45,7 +45,7 @@ export default function About() {
       >
         <video
           ref={bgVideoRef}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted

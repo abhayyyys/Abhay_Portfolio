@@ -137,7 +137,16 @@ function MainVideoBlock({ video, onPlay, onClose, isActive }: { video: ProjectVi
         )}
       </div>
       {video.externalLink && (
-        <div className="absolute top-4 right-4 z-10" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="absolute top-4 right-4 z-10"
+          style={{
+            transformOrigin: "top right",
+            transform: playing ? "scale(0)" : "scale(1)",
+            opacity: playing ? 0 : 1,
+            transition: "transform 0.25s ease, opacity 0.2s ease",
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
           <Link href={video.externalLink} target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:border-orange-500 hover:text-orange-500 font-bold px-5 py-2 rounded-full text-sm transition-colors duration-200 inline-block bg-black/20 backdrop-blur-sm">
             {video.externalLabel || "VIEW"}
           </Link>
@@ -269,7 +278,16 @@ function ReelBlock({ video, onPlay, onClose, isActive }: { video: ProjectVideo; 
         </button>
       </div>
       {video.externalLink && (
-        <div className="absolute top-3 right-3 z-10" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="absolute top-3 right-3 z-10"
+          style={{
+            transformOrigin: "top right",
+            transform: playing ? "scale(0)" : "scale(1)",
+            opacity: playing ? 0 : 1,
+            transition: "transform 0.25s ease, opacity 0.2s ease",
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
           <Link href={video.externalLink} target="_blank" rel="noopener noreferrer" className="border border-white text-white hover:border-orange-500 hover:text-orange-500 font-bold px-3 py-1 rounded-full text-xs transition-colors duration-200 inline-block bg-black/20 backdrop-blur-sm">
             {video.externalLabel || "VIEW"}
           </Link>
@@ -399,8 +417,8 @@ function IIMBVideoSection({
       )}
       {reelVideo && (
         <div
-          className="relative overflow-hidden rounded-2xl cursor-pointer mx-auto w-auto"
-          style={{ aspectRatio: "9/16", maxHeight: "75vh", maxWidth: "100%" }}
+          className="relative overflow-hidden rounded-2xl cursor-pointer mx-auto"
+          style={{ aspectRatio: "9/16", height: "70vh", maxWidth: "100%" }}
           onClick={handleReelClick}
         >
           <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
@@ -485,7 +503,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     >
       <section className="pt-32 px-4 sm:px-6 lg:px-12 pb-16" style={{ backgroundColor: "#1b1919" }}>
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-left mb-16 leading-tight text-white" style={{ fontFamily: "Product Sans, sans-serif" }}>
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-left mb-16 leading-tight text-white break-words" style={{ fontFamily: "Product Sans, sans-serif" }}>
             {project.mainHeading}
           </h1>
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-16 pt-12">
