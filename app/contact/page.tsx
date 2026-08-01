@@ -66,7 +66,8 @@ export default function Contact() {
               Mail
             </span>
             <span className="text-xs sm:text-sm text-center break-all" style={{ color: "rgba(27, 25, 25, 0.6)" }}>
-              abhaysingh.mov@gmail.com
+              abhaysingh.mov
+              @gmail.com
             </span>
           </a>
 

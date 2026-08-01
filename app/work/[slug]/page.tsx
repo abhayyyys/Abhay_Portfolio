@@ -15,6 +15,21 @@ function safePlay(v: HTMLVideoElement | null) {
   if (p !== undefined) p.catch(() => {});
 }
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mediaQuery.matches);
+
+    update();
+    mediaQuery.addEventListener("change", update);
+    return () => mediaQuery.removeEventListener("change", update);
+  }, []);
+
+  return isMobile;
+}
+
 function ScrubBar({ videoRef, visible }: { videoRef: RefObject<HTMLVideoElement | null>; visible: boolean }) {
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -370,6 +385,10 @@ function IIMBVideoSection({
   const secondaryVideo = projectVideos.find(v => v.type === "secondary");
   const reelVideo = projectVideos.find(v => v.type === "reel");
 
+  const isMobile = useIsMobile();
+  const ROW_HEIGHT = 380;
+  const REEL_WIDTH = Math.round(ROW_HEIGHT * 9 / 16);
+
   const reelRef = useRef<HTMLVideoElement>(null);
   const [reelPlaying, setReelPlaying] = useState(false);
 
@@ -412,26 +431,52 @@ function IIMBVideoSection({
       {mainVideo && (
         <MainVideoBlock video={mainVideo} isActive={activeId === null || activeId === "main"} onPlay={() => setActiveId("main")} onClose={() => setActiveId(null)} />
       )}
-      {secondaryVideo && (
-        <SecondaryVideoBlock video={secondaryVideo} isActive={activeId === null || activeId === "sec"} onPlay={() => setActiveId("sec")} onClose={() => setActiveId(null)} />
-      )}
-      {reelVideo && (
-        <div
-          className="relative overflow-hidden rounded-2xl cursor-pointer mx-auto"
-          style={{ aspectRatio: "9/16", height: "70vh", maxWidth: "100%" }}
-          onClick={handleReelClick}
-        >
-          <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
-            <source src={reelVideo.src} type="video/mp4" />
-          </video>
-          {!reelPlaying ? (
-            <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors">
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 text-white text-sm font-bold">PLAY</div>
-            </div>
-          ) : (
-            <div className="absolute top-3 left-3"><div className="bg-orange-500 rounded-full px-2 py-1 text-white text-xs font-bold">CLOSE</div></div>
+      {isMobile ? (
+        <>
+          {secondaryVideo && (
+            <SecondaryVideoBlock video={secondaryVideo} isActive={activeId === null || activeId === "sec"} onPlay={() => setActiveId("sec")} onClose={() => setActiveId(null)} />
           )}
-        </div>
+          {reelVideo && (
+            <div
+              className="relative overflow-hidden rounded-2xl cursor-pointer mx-auto"
+              style={{ aspectRatio: "9/16", height: "70vh", maxWidth: "100%" }}
+              onClick={handleReelClick}
+            >
+              <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
+                <source src={reelVideo.src} type="video/mp4" />
+              </video>
+              {!reelPlaying ? (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors">
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 text-white text-sm font-bold">PLAY</div>
+                </div>
+              ) : (
+                <div className="absolute top-3 left-3"><div className="bg-orange-500 rounded-full px-2 py-1 text-white text-xs font-bold">CLOSE</div></div>
+              )}
+            </div>
+          )}
+        </>
+      ) : (
+        (secondaryVideo || reelVideo) && (
+          <div className="flex gap-4" style={{ height: `${ROW_HEIGHT}px` }}>
+            {secondaryVideo && (
+              <SecondaryVideoBlock video={secondaryVideo} isActive={activeId === null || activeId === "sec"} onPlay={() => setActiveId("sec")} onClose={() => setActiveId(null)} />
+            )}
+            {reelVideo && (
+              <div className="relative overflow-hidden rounded-2xl cursor-pointer flex-shrink-0" style={{ width: `${REEL_WIDTH}px` }} onClick={handleReelClick}>
+                <video ref={reelRef} className="absolute inset-0 w-full h-full object-cover" loop autoPlay playsInline preload="auto">
+                  <source src={reelVideo.src} type="video/mp4" />
+                </video>
+                {!reelPlaying ? (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full px-3 py-2 text-white text-sm font-bold">PLAY</div>
+                  </div>
+                ) : (
+                  <div className="absolute top-3 left-3"><div className="bg-orange-500 rounded-full px-2 py-1 text-white text-xs font-bold">CLOSE</div></div>
+                )}
+              </div>
+            )}
+          </div>
+        )
       )}
     </div>
   );
