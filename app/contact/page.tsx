@@ -65,9 +65,8 @@ export default function Contact() {
             <span className="text-lg sm:text-2xl font-semibold text-center" style={{ fontFamily: "Product Sans, sans-serif", color: "#1b1919" }}>
               Mail
             </span>
-            <span className="text-xs sm:text-sm text-center break-all" style={{ color: "rgba(27, 25, 25, 0.6)" }}>
-              abhaysingh.mov
-              @gmail.com
+            <span className="text-sm sm:text-sm text-center break-all" style={{ color: "rgba(27, 25, 25, 0.6)" }}>
+              abhaysingh.mov@gmail.com
             </span>
           </a>
 
@@ -106,7 +105,7 @@ export default function Contact() {
             <span className="text-lg sm:text-2xl font-semibold text-center" style={{ fontFamily: "Product Sans, sans-serif", color: "#1b1919" }}>
               Instagram
             </span>
-            <span className="text-xs sm:text-sm text-center" style={{ color: "rgba(27, 25, 25, 0.6)" }}>
+            <span className="text-sm sm:text-sm text-center" style={{ color: "rgba(27, 25, 25, 0.6)" }}>
               @abhayyyysingh
             </span>
           </a>

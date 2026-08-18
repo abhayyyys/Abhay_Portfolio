@@ -13,12 +13,8 @@ export default function About() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const vh = window.innerHeight;
-
-      // Video fades from 1 to 0.08 as user scrolls through first screen
       const opacity = Math.max(0.08, 1 - scrollY / (vh * 0.7));
       setVideoOpacity(opacity);
-
-      // Glass card appears after scrolling 20% of viewport
       setGlassVisible(scrollY > vh * 0.2);
     };
 
@@ -26,14 +22,12 @@ export default function About() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const R2 = "https://videos.abhaysingh.space";
-
 
   return (
     <div style={{ backgroundColor: "#EDF1F0" }}>
 
-      {/* Fixed video — z-index 1, navbar is z-index 10 so stays clickable */}
+      {/* Fixed video — padded so it sits inset from all edges */}
       <div
         className="fixed inset-0 w-full h-full pointer-events-none"
         style={{
@@ -41,11 +35,12 @@ export default function About() {
           opacity: videoOpacity,
           transition: "opacity 0.1s linear",
           backgroundColor: "#EDF1F0",
+          padding: "80px 16px 16px 16px", // top accounts for navbar height
         }}
       >
         <video
           ref={bgVideoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover rounded-2xl"
           autoPlay
           loop
           muted
@@ -59,17 +54,10 @@ export default function About() {
       {/* First section — fullscreen, video plays behind */}
       <div className="relative h-screen" style={{ zIndex: 2 }} />
 
-      {/* Stat counter — numbers scroll-linked to this section's position,
-          rising as it enters the viewport and falling back if scrolled
-          past in reverse. Sits above the fixed bg video like the intro
-          card above it. */}
       <div className="relative" style={{ zIndex: 2 }}>
         <StatsCounter />
       </div>
 
-      {/* Second section — glass card. Padding trimmed to pt-0/pb-2 (from
-          pt-6/pb-6) so it sits right up against the stats card above it
-          instead of leaving a visible gap between the two glass panels. */}
       <div
         className="relative flex flex-col justify-center items-center pt-0 pb-6 px-4"
         style={{ zIndex: 2 }}
@@ -104,7 +92,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* WhatIAmGoodAt — solid dark background blocks video */}
       <div style={{ position: "relative", zIndex: 2, backgroundColor: "#1b1919" }}>
         <WhatIAmGoodAt />
       </div>

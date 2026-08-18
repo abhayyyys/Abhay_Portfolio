@@ -309,8 +309,6 @@ export const projects: Project[] = [
       {
         src: `${R2}/videos/work_vids/ace/ace_final_3.mp4`,
         type: "reel",
-        externalLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsvnRJF8u1jZ3ozdIvrBCjIU",
-        externalLabel: "VIEW MORE"
       },
       {
         src: `${R2}/videos/work_vids/ace/final.mp4`,
@@ -349,8 +347,6 @@ export const projects: Project[] = [
       {
         src: `${R2}/videos/work_vids/dwa/AM_2.mp4`,
         type: "reel",
-        externalLink: "https://www.youtube.com/playlist?list=PLxOqVdcuLwsteg6YZGkO35mURwk19tsdE",
-        externalLabel: "VIEW MORE",
       },
       {
         src: `${R2}/videos/work_vids/dwa/aqua2.mp4`,
@@ -360,10 +356,10 @@ export const projects: Project[] = [
         src: `${R2}/videos/work_vids/dwa/d1_302.mp4`,
         type: "reel",
       },
-      {
-        src: `${R2}/videos/work_vids/dwa/d2.mp4`,
-        type: "reel",
-      },
+      // {
+      //   src: `${R2}/videos/work_vids/dwa/d2.mp4`,
+      //   type: "reel",
+      // },
     ],
     videos: [],
   },

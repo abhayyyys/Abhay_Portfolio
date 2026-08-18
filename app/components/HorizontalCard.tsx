@@ -45,7 +45,7 @@ export default function HorizontalCard({
 
   return (
     <div
-      className="flex flex-col lg:flex-row lg:items-center bg-[#EDF1F0] hover:bg-[#1b1919] hover:rounded-[5rem] p-4 sm:p-6 lg:p-8 mx-4 sm:mx-6 lg:mx-8 transition-all duration-200 ease-in-out group cursor-pointer"
+      className="flex flex-col lg:flex-row lg:items-center bg-[#EDF1F0] hover:bg-[#1b1919] hover:rounded-[5rem] p-4 sm:p-6 lg:p-8 mx-4 sm:mx-6 lg:mx-8 transition-all duration-0 group cursor-pointer"
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
