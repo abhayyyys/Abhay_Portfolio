@@ -77,7 +77,7 @@ export default function HorizontalCard({
 
      {/* Main heading */}
       <div className="flex-grow flex flex-col lg:flex-row lg:items-end mb-4 lg:mb-0 lg:mr-8 lg:self-end text-center lg:text-left">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black group-hover:text-white leading-tight transition-colors duration-300 ease-in-out">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black group-hover:text-white leading-tight transition-colors duration-0">
           {mainHeading}
         </h2>
       </div>
@@ -88,7 +88,7 @@ export default function HorizontalCard({
           [{category}]
         </h3>
 
-        <p className="text-lg sm:text-xl text-gray-700 group-hover:text-white leading-relaxed transition-colors duration-300 ease-in-out">
+        <p className="text-lg sm:text-xl text-gray-700 group-hover:text-white leading-relaxed transition-colors duration-0">
           {description}
         </p>
       </div>

@@ -35,7 +35,7 @@ export default function About() {
           opacity: videoOpacity,
           transition: "opacity 0.1s linear",
           backgroundColor: "#EDF1F0",
-          padding: "80px 16px 16px 16px", // top accounts for navbar height
+          padding: "16px", // top accounts for navbar height
         }}
       >
         <video
